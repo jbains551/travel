@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255,255,255,0.9);
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+div {
+    width: 100%;
+    min-height: 50vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #333;
+    margin-bottom: 0.5rem;
+}
+
+input, button {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.searchForm {
+    background: rgba(255, 255, 255,0.3);
+    border: 1px solid #000;
+    border-radius: 500px;
+    /* width: 70%; */s
+    max-width: 650px;
+    display: flex;
+}
+
+.searchText {
+    color: rgb(10, 9, 9);
+    flex-grow: 1;
+    padding: 0.5em 0.25em 0.5em 1em;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.searchButton {
+    padding: 0.5em 0.75em 0.5em 0.5em;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255,255,255,0.8);
+}
+
+.searchButton:hover,
+.searchButton:focus{
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(14, 13, 13);
+}
+
+@media only screen and (min-width: 768px) {
+    input, button {
+        font-size: 2rem;
+    }
+}
